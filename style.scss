@@ -1,0 +1,97 @@
+$font-family-var: 'Times New Roman', Times, serif;  // Variable
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#user-label {
+    position: absolute; // To reference the parent have the parent's position
+                        // attribute be either not static or not inherited
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute; // Absolute relative to the .score-board div since
+                        // .score-board's position attribute is relative
+    top: 30px;
+    right: -30px;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: $font-family-var;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.score-board {
+    margin: 20px auto;  // 20px top/bottom auto left/right
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: white;   // Font color
+    font-size: 46px;
+    padding: 15px 20px; // 15px top/bottom 20px left/right
+    font-family: $font-family-var;
+    position: relative; // This is so that the child id's absolute position
+                        // is referenced to the score-board
+}
+
+.badge {
+    background: #E2584D;
+    color: white;   // Font color
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: $font-family-var;
+}
+
+.result {
+    font-size: 40px;
+    color: white;   // Font color
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-family: $font-family-var;
+    }
+}
+
+.choices {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choice {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;  // Aligns them horizontally
+    transition: all 0.3s ease;
+
+    :hover {
+        cursor: pointer;
+        background: #24272E;
+    }
+}
+
+header {
+    background: white;
+    padding: 20px;
+
+    h1 {
+        color: #24272E;
+        text-align: center;
+        font-family: $font-family-var;
+    }
+}
+
+ body {
+     background-color: #292C34;
+ }
