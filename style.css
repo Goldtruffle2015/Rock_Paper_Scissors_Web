@@ -73,7 +73,7 @@
   transition: all 0.3s ease;
 }
 
-.choice :hover {
+.choice:hover {
   cursor: pointer;
   background: #24272E;
 }
